@@ -16,7 +16,7 @@ public class Node<AnyType>
      */
     public Node(AnyType passData)
     {
-        this.data = passData;
+        data = passData;
     }
 
     /**
@@ -36,8 +36,8 @@ public class Node<AnyType>
      */
     public Node(Node<AnyType> passNode)
     {
-        this.data = passNode.getData();
-        this.next = passNode.getNext();
+        data = passNode.getData();
+        next = passNode.getNext();
     }
 
     /**
