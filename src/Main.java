@@ -1,8 +1,8 @@
-import java.io.*;
-
 /**
  * Main Client Class to test data structure
  *
+ * @author Eric Kristiansen
+ * @version 7/15/2016
  */
 public class Main
 {
@@ -11,7 +11,7 @@ public class Main
     {
         try
         {
-            LinkedList<Node<Data>> linkedList = new LinkedList<Node<Data>>();
+            LinkedList<Node<Data>> linkedList = new LinkedList<>();
 
             linkedList.printList();
 

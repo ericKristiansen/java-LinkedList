@@ -1,8 +1,8 @@
-import java.util.Iterator;
-import java.util.NoSuchElementException;
-
 /**
  * This is a basic linked list class
+ *
+ * @author Eric Kristiansen
+ * @version 7/15/2016
  */
 public class LinkedList<AnyType>
 {

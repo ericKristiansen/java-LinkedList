@@ -1,5 +1,8 @@
 /**
  * This is a basic Data class hold data for the Node object
+ *
+ * @author Eric Kristiansen
+ * @version 7/15/2016
  */
 public class Data
 {

@@ -1,5 +1,8 @@
 /**
  * This is a basic Node class to be used in the LinkedList class
+ *
+ * @author Eric Kristiansen
+ * @version 7/15/2016
  */
 public class Node<AnyType>
 {
