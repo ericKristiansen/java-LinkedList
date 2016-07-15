@@ -50,12 +50,60 @@ public class LinkedList<AnyType>
      *  Remove the head from the list.
      * @return head
      */
-    public Node<AnyType>RemoveHead()
+    public Node<AnyType>removeHead()
     {
         head = head.getNext();
         Node<AnyType> oldHead = new Node(head);
 
         return oldHead;
+    }
+
+    public void appendHead(Node<AnyType> passNode)
+    {
+        //case empty
+        if (head == null)
+        {
+            head = tail = passNode;
+        }
+        //case not empty
+        else
+        {
+            passNode.setNext(head);
+            head = passNode;
+        }
+    }
+
+    public void appendTail(Node<AnyType> passNode)
+    {
+        //case empty
+        if (head == null)
+        {
+            head = tail = passNode;
+        }
+        //case not empty
+        {
+            tail.setNext(passNode);
+            tail = passNode;
+        }
+    }
+
+    /**
+     * Print the contents of the list
+     */
+    public void printList()
+    {
+        if (head != null)
+        {
+            System.out.println("List:");
+            Node currentNode = head;
+            while (currentNode != null)
+            {
+                System.out.println(currentNode.getData().toString());
+                currentNode = currentNode.getNext();
+            }
+            System.out.println();
+        }
+
     }
 
 }

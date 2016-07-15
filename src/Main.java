@@ -1,7 +1,8 @@
 import java.io.*;
 
 /**
- * Main Client Class
+ * Main Client Class to test data structure
+ *
  */
 public class Main
 {
@@ -10,12 +11,30 @@ public class Main
     {
         try
         {
-            String temp;
-            BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-            System.out.print("Please Enter Some Junk: ");
-            temp = br.readLine();
-            System.out.println();
-            System.out.println("temp: " + temp);
+            LinkedList<Node<Data>> linkedList = new LinkedList<Node<Data>>();
+
+            linkedList.printList();
+
+            //create elements
+            System.out.println("adding element to head:");
+            linkedList.appendHead(new Node(new Data("First Data Element")));
+            System.out.println("adding element to tail:");
+            linkedList.appendTail(new Node(new Data("Last Data Element")));
+
+            linkedList.printList();
+
+            System.out.println("adding element to head:");
+            linkedList.appendHead(new Node(new Data("More First Data Element")));
+            System.out.println("adding element to tail:");
+            linkedList.appendTail(new Node(new Data("More Last Data Element")));
+
+            linkedList.printList();
+
+            System.out.println("removing element from head:");
+            linkedList.removeHead();
+
+            linkedList.printList();
+
         }
         catch(Exception ex)
         {
